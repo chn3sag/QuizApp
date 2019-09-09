@@ -1,0 +1,36 @@
+body {
+    box-sizing: border-box;
+    margin: -1px;
+}
+
+header,footer{ 
+    border: 1px darkslategrey solid;
+    background-color: gray;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+}
+
+main {
+    border: 1px darkslategrey solid;
+    background-color: gray;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;;
+    width: 900px;
+    height: 400px; 
+    text-align: center;
+
+}
+
+.question,.options {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    border: 1px darkslategrey dotted; 
+    height: 100px;
+}
+
+.options {
+    height: 210px;
+}
