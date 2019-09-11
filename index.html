@@ -3,29 +3,37 @@
     <head>
         <title> Javascript Quiz App </title>
         <link href="index.css" rel="stylesheet" type="text/css">
+        <meta name="description" content="A quiz application to test basic javascript knowledge">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
         <header>
-            
+            <h1>Javascript Quiz</h1>
         </header>
+        <nav>
+            <ul> 
+                <li><a href="index.html"> Start Quiz </a></li>
+                <li><a href="question.html"> Quiz Questions</a></li>
+                <li><a href="answer.html"> Question Answer</a></li>
+                <li><a href="restartQuiz.html">Restart quiz</a></li>
+            </ul>
+        </nav>
         <main>
-            <section class="intro">
-            
-            
-
+            <section>
+                <section class="data-cont">
+                    <h2> Start quiz introduction</h2>
+                </section>
+                <section class="answer-btn">
+                    <input type="button" value="Start Quiz">
+                </section>
             </section>
-            <section class="question">
-
-            </section>
-            <section class="options">
-
-            </section>
-            <section class="correct"></section>
-            <section class="incorrect"></section>
         </main>
         <footer>
-            <section class="questionNum"></section>
-            <section class="score"></section>
+            <section class="questionNo-score">
+                <h4> Question Number: </h4>
+                <h4> Score: </h4>
+            </section>
         </footer>
     </body>
 
