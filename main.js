@@ -78,6 +78,7 @@ function updateIncorrectAnswer() {
     let inCorrectAns = $(`
     <h3>Uh-Oh! That is Incorrect!!!</h3>
     <img class="wrong-answer-img img-border" src="images/IncorrectAns.jpg" alt="InCorrect Answer Image">
+    <h3>The correct answer is ${DATA[numQuestion].answer}</h3>
     `);
     $(".js-qtn-answer").html(inCorrectAns);
     updateAnsCheckContent();
@@ -86,7 +87,6 @@ function updateIncorrectAnswer() {
 /** Updates the answer content */
 function updateAnsCheckContent() {
     let btnContent = $(`
-        <h3>The correct answer is ${DATA[numQuestion].answer}</h3>
         <button class="user-ctrl-btn js-next-btn">Next</button>`);
     $(".js-qtn-answer").append(btnContent);
     $(".js-qtn-answer").show();
