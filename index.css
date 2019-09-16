@@ -1,0 +1,155 @@
+body,*:after,*:before {
+    box-sizing: border-box;
+    background-image: url("images/js-bg.jpg");
+    background-attachment: local;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #c78100;
+}
+
+ul {
+    list-style:none;
+}
+
+header,footer {
+    position: relative;
+    border: 1px rgb(0, 0, 0) solid;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0,0.8);
+    margin-top: -10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom:20px;
+    height: 70px;
+    width: 100%;
+    text-align: center;
+    /*color: #c78100;*/
+    font-family: 'Alike', serif;
+}
+
+h1 {
+    font-size:40px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+main {
+    border: 1px rgb(0,0,0) solid;
+    border-radius: 5px;
+    background-color: rgb(0,0,0,0.8);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    height: 440px; 
+    padding-left:50px;
+    padding-right: 50px;
+    text-align: justify;
+    font-family: 'Kadwa', serif;
+    font-size: 10px;
+    backdrop-filter: blur(4px);
+}
+
+.img-border {
+    border-radius: 5px;
+}
+.heading-img {
+    position: absolute;
+    left: -2px;
+    height: 100%;
+    top: 0px;
+}
+
+.main-heading {
+    text-align: center;
+    font-size: 30px;
+    margin-top: -5px;
+}
+
+.quiz-img {
+    margin: 50px auto 30px auto;
+}
+
+.right-answer-img {
+    margin: 7px auto;
+}
+
+.user-ctrl-btn {
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgb(198, 129, 0);
+    width: 20%;
+    height: 15%;
+    font-size: 20px;
+    color: whitesmoke;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.user-ctrl-btn:hover {
+    box-shadow: 0 5px 15px 5px rgba(145, 92, 182, .4);
+}
+
+
+
+.intro-box {
+    margin: auto;
+    text-align: center;
+}
+
+.question {
+    font-size: 25px;
+    padding-top: 40px;
+}
+
+.options {
+    font-size: 20px;
+}
+
+fieldset {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+.qtn-answer, .restart-quiz  {
+    text-align: center;
+}
+
+
+@media screen and (max-width:920px) and (min-width: 481px) {
+
+}
+
+@media screen and (max-width:480px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .heading-img {
+        display: none;
+    }
+    h1,.main-heading {
+        font-size: 25px;
+    }
+
+    .options, .question {
+        font-size: 15px;
+    }
+
+    h2, .main, .options, .user-ctrl-btn {
+        font-size: 10px;
+    }
+
+    .main, .footer {
+        display: flex;
+    }
+}

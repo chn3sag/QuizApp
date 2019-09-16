@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Javascript Quiz </title>
+        <meta name="description" content="Quiz application to test basic knowledge of Javascript">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Alike|Kadwa&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+        <!--Jquery CDN-->
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+        <!--Datastore holds the questions and other global variables-->
+        <script src="datastore.js"></script>
+        <script src="main.js"></script>
+    </head>
+    
+    <body>
+        <header role="heading">
+            <h1>Javascript Quiz </h1>
+            <img class="heading-img img-border" src="images/js-heading-img.png" alt="Javascript image">
+        </header>
+
+        <main role="main">
+            <section class="intro-box">
+                <section class="data-cont">
+                    <h2> A quiz to test your knowlegde of basic Javascript.</h2>
+                </section>
+                
+                <img class="quiz-img img-border" src="images/quiz-img.jpg" alt="Image of minion getting ready for quiz">
+                <input type="button" class="user-ctrl-btn js-start-quiz-btn" value="Start Quiz">
+            </section>
+            <section class="question-option-form"></section>
+            <section class="js-qtn-answer qtn-answer"></section>
+            <section class="js-restart-quiz restart-quiz"></section>
+        </main>
+
+        <footer>
+            <section class="questionNo-score">
+                <ul class="footer-list">
+                    <li>
+                        <span> Question Number:</span>
+                        <span class="qNum"></span>
+                    </li>
+                    <li>
+                        <span> Score: </span>
+                        <span class="score"></span>
+                    </li>
+                </ul>
+            </section>
+        </footer>
+    </body>
+</html>
