@@ -16,41 +16,43 @@ header,footer {
     border: 1px rgb(0, 0, 0) solid;
     border-radius: 5px;
     background-color: rgb(0, 0, 0,0.8);
-    margin-top: -10px;
+    margin-top: -1vh;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom:20px;
-    height: 70px;
+    padding-bottom: 2vh;
+    height: 9vh;
     width: 100%;
     text-align: center;
-    /*color: #c78100;*/
     font-family: 'Alike', serif;
+    backdrop-filter: blur(4px);
+    font-size: calc(8px + 0.9vw);
 }
 
 h1 {
-    font-size:40px;
+    font-size: calc(10px + 2.0vw);
 }
 
 h2 {
-    font-size: 20px;
+    font-size: calc(10px + 1.5vw);
 }
 
 main {
     border: 1px rgb(0,0,0) solid;
     border-radius: 5px;
     background-color: rgb(0,0,0,0.8);
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 5vh;
+    margin-bottom: 9vh;
     margin-left: auto;
     margin-right: auto;
-    width: 900px;
-    height: 440px; 
-    padding-left:50px;
-    padding-right: 50px;
+    width: 70%;
+    height: 65vh; 
+    padding-left: 5vw;
+    padding-right: 5vw;
     text-align: justify;
     font-family: 'Kadwa', serif;
-    font-size: 10px;
     backdrop-filter: blur(4px);
+    line-height: 1.5;
+    
 }
 
 .img-border {
@@ -60,12 +62,13 @@ main {
     position: absolute;
     left: -2px;
     height: 100%;
+    width:20%;
     top: 0px;
 }
 
 .main-heading {
     text-align: center;
-    font-size: 30px;
+    font-size: calc(8px + 0.9vw);
     margin-top: -5px;
 }
 
@@ -74,20 +77,22 @@ main {
 }
 
 .right-answer-img {
-    margin: 7px auto;
+    margin: 0.5vh auto;
 }
 
 .user-ctrl-btn {
-    margin-top: 30px;
+    margin-top: 5vh;
     display: block;
     margin-left: auto;
     margin-right: auto;
     background-color:rgb(198, 129, 0);
-    width: 20%;
-    height: 15%;
-    font-size: 20px;
+    width: 12vw;
+    height: 5vh;
+    font-size: calc(6px + 0.7vw);
     color: whitesmoke;
     text-decoration: none;
+    text-align: center;
+    padding: 0px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -97,20 +102,19 @@ main {
     box-shadow: 0 5px 15px 5px rgba(145, 92, 182, .4);
 }
 
-
-
 .intro-box {
     margin: auto;
     text-align: center;
 }
 
 .question {
-    font-size: 25px;
+    font-size: calc(10px + 1.3vw);
     padding-top: 40px;
 }
 
 .options {
-    font-size: 20px;
+    font-size: calc(10px + 1.0vw);
+    line-height: 2;
 }
 
 fieldset {
@@ -119,37 +123,61 @@ fieldset {
   margin: 0;
 }
 
-.qtn-answer, .restart-quiz  {
+.qtn-answer, .restart-quiz {
     text-align: center;
 }
 
-
-@media screen and (max-width:920px) and (min-width: 481px) {
-
+.footer-list {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly; 
+    align-items: center;
+    flex: 0 0 30%;
 }
 
-@media screen and (max-width:480px) {
-    header {
+.footer-list li {
+    align-self: center;
+}
+
+
+@media screen and (max-width:920px) and (min-width: 481px) and (orientation: potrait) {
+    body {
         display: flex;
         flex-direction: column;
     }
 
+    .qtn-answer,.restart-quiz{
+        padding-top: 15vh;
+    }
+
+    .user-ctrl-btn {
+        margin: 10vh;
+    }
+
+
+}
+
+@media screen and (max-width:480px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
     .heading-img {
         display: none;
     }
-    h1,.main-heading {
-        font-size: 25px;
+
+    .footer-list {
+        flex-direction: column;
     }
 
-    .options, .question {
-        font-size: 15px;
-    }
-
-    h2, .main, .options, .user-ctrl-btn {
-        font-size: 10px;
-    }
-
-    .main, .footer {
+    .intro-box,.qtn-answer,.restart-quiz {
         display: flex;
+        flex-direction: column;
+        justify-content: space-evenly
     }
+
+    .quiz-img {
+        width: 60%;
+    }
+  
 }

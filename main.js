@@ -66,7 +66,7 @@ function checkAnswer(selectedOption) {
 /** Updates the HTML with correct Answer Screen */
 function updateCorrectAnswer() {
     let correctAns = $(`
-    <h2>Yay! That is correct!!!</h2>
+    <h3>Yay! That is correct!!!</h3>
     <img class="right-answer-img img-border" src="images/CorrectAnswer.png" alt="Correct Answer Image">
     `); 
     $(".js-qtn-answer").html(correctAns);
@@ -76,7 +76,7 @@ function updateCorrectAnswer() {
 /** Updates the HTML with incorrect Answer Screen */
 function updateIncorrectAnswer() {
     let inCorrectAns = $(`
-    <h2>Uh-Oh! That is Incorrect!!!</h2>
+    <h3>Uh-Oh! That is Incorrect!!!</h3>
     <img class="wrong-answer-img img-border" src="images/IncorrectAns.jpg" alt="InCorrect Answer Image">
     `);
     $(".js-qtn-answer").html(inCorrectAns);
@@ -86,7 +86,7 @@ function updateIncorrectAnswer() {
 /** Updates the answer content */
 function updateAnsCheckContent() {
     let btnContent = $(`
-        <h2 class="right-answer">The correct answer is ${DATA[numQuestion].answer}</h2>
+        <h3>The correct answer is ${DATA[numQuestion].answer}</h3>
         <button class="user-ctrl-btn js-next-btn">Next</button>`);
     $(".js-qtn-answer").append(btnContent);
     $(".js-qtn-answer").show();

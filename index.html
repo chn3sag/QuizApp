@@ -6,6 +6,7 @@
         <meta name="description" content="Quiz application to test basic knowledge of Javascript">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Alike|Kadwa&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
         <link rel="stylesheet" href="index.css">
         <!--Jquery CDN-->
         <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
@@ -28,7 +29,7 @@
                 </section>
                 
                 <img class="quiz-img img-border" src="images/quiz-img.jpg" alt="Image of minion getting ready for quiz">
-                <input type="button" class="user-ctrl-btn js-start-quiz-btn" value="Start Quiz">
+                <input type="button" role="button" class="user-ctrl-btn js-start-quiz-btn" value="Start Quiz">
             </section>
             <section class="question-option-form"></section>
             <section class="js-qtn-answer qtn-answer"></section>
@@ -39,7 +40,7 @@
             <section class="questionNo-score">
                 <ul class="footer-list">
                     <li>
-                        <span> Question Number:</span>
+                        <span> Question Number: </span>
                         <span class="qNum"></span>
                     </li>
                     <li>
